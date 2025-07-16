@@ -1,0 +1,195 @@
+/* style.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #f0f0f0;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+h1, h2 {
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 255, 255, 0.4);
+}
+
+h1 {
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p, li, .coding-links a, .contact-button {
+  text-align: center;
+  line-height: 1.8;
+  font-size: 1.3rem;
+  margin: 0.75rem auto;
+  display: block;
+}
+
+.box, .skill-bar, table, .modal-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 900px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0,255,255,0.2);
+}
+
+.toggle-theme {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 0.5rem 1rem;
+  background: #444;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 999;
+  transition: background 0.3s ease;
+}
+
+.toggle-theme:hover {
+  background: #666;
+}
+
+.animated-text {
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid #f0f0f0;
+  width: 25ch;
+  margin: 2rem auto;
+  font-family: 'Courier New', Courier, monospace;
+  text-shadow: 0 0 5px #00f7ff, 0 0 10px #00f7ff;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 25ch }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #f0f0f0; }
+}
+
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 100%;
+}
+
+.skill-bar span {
+  display: inline-block;
+  width: 100px;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.skill-bar .bar {
+  height: 14px;
+  background-color: #00cc99;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1rem;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content input,
+.modal-content textarea {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: none;
+  font-size: 1.1rem;
+}
+
+a {
+  color: #33ccff;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  margin: 0.5rem;
+  font-size: 1.2rem;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #00ffff;
+}
+
+img.profile-photo {
+  border-radius: 50%;
+  margin: 1rem 0;
+  max-width: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-button {
+  background-color: #00aaff;
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  margin: 1rem auto;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  display: block;
+}
+
+.contact-button:hover {
+  transform: scale(1.05);
+  background-color: #0088cc;
+}
+
+@media (max-width: 768px) {
+  .animated-text {
+    font-size: 2.5rem;
+  }
+  .box {
+    padding: 0.5rem;
+  }
+  .skill-bar span {
+    width: 80px;
+    font-size: 1rem;
+  }
+}
