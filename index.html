@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sudheer Yadav Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+    .box, .skill-bar, table, .modal-content {
+      background-color: #1e1e1e;
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1rem auto;
+      max-width: 900px;
+    }
+    .toggle-theme {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 0.5rem;
+      background: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .animated-text {
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 0.15em solid #f0f0f0;
+      width: 22ch;
+      margin: 2rem auto;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 22ch }
+    }
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #f0f0f0; }
+    }
+    .skill-bar span {
+      display: inline-block;
+      width: 100px;
+    }
+    .skill-bar .bar {
+      height: 10px;
+      background-color: #4caf50;
+      border-radius: 5px;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      align-items: center;
+      justify-content: center;
+    }
+    .modal-content input,
+    .modal-content textarea {
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      border-radius: 4px;
+      border: none;
+    }
+    a { color: #4da6ff; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <button class="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
+  <h1 class="animated-text">Hi, I am <strong>Sudheer Yadav</strong></h1>
+
+  <!-- About Me -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="box">
+      <img src="sudheer.jpg" alt="Sudheer Yadav" class="profile-photo" width="100" style="float:left; margin-right:1rem;"/>
+      <div>
+        <p>I am a passionate full-stack and backend Java developer with a strong foundation in algorithms, data structures, and building web-based solutions. I specialize in developing efficient server-side logic, API design, and user-focused interfaces. I love working on challenging coding problems and always aim to write clean, scalable, and maintainable code.</p>
+        <p>Email: yadavsudheer20072005@gmail.com</p>
+        <p>WhatsApp: +91-(234)9187456</p>
+        <p>LinkedIn: https://linkedin.com/in/sudheer-coder/</p>
+        <a href="https://linkedin.com/in/sudheer-coder/" target="_blank">LinkedIn</a>
+        <a href="YOUR_LINKEDIN_PROFILE_URL" target="_blank">
+  <i class="fab fa-linkedin" style="font-size:24px;"></i>
+</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What I Do -->
+  <section id="what-i-do">
+    <h2>What I Do</h2>
+    <div class="box">
+      <div>
+        <img src="software.jpg" alt="Software Development" width="100">
+        <p>Software Development: Designing clean, reliable backend systems using Java, Spring Boot, and MySQL. Adept at REST APIs, cloud deployment, and architectural patterns like MVC.</p>
+      </div>
+        <div>
+            <img src="web.jpg" alt="Web Development" width="100">
+            <p>Web Development: Creating responsive and interactive web applications using HTML, CSS, JavaScript, and frameworks like React. Focus on user experience and performance optimization.</p>
+      <div>
+        <img src="dsa.jpg" alt="DSA" width="100">
+        
+        <p>DSA & Problem Solving: Regular competitive programmer on LeetCode, GFG, and Codeforces. Focus on improving algorithmic thinking and real-time problem-solving.</p>
+      </div>
+      <div>
+        <img src="java.jpg" alt="Full Stack" width="100">
+      </div>
+        <p>Java Full Stack Development: Build responsive web interfaces using HTML, CSS, JS and link them with Java-based robust backend applications. Experience with Git, GitHub, and deployment tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coding Profiles -->
+  <section id="coding-profiles">
+    <h2>Coding Profiles</h2>
+    <div class="box center-content coding-links">
+  <h2>Coding Profiles</h2>
+  <a href="https://leetcode.com/your-profile" target="_blank">LeetCode</a>
+  <a href="https://auth.geeksforgeeks.org/user/your-profile" target="_blank">GeeksforGeeks</a>
+</div>
+
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <table border="0" cellpadding="80" cellspacing="0" style="width:100%; text-align:left; margin:auto;">
+      <tr>
+        <th>Degree</th>
+        <th>Institute</th>
+        <th>Year</th>
+        <th>Percentage / Cgpa</th>
+      </tr>
+      <tr>
+        <td>B.Tech</td>
+        <td>Babu Banarasi Das Northern India Institute Of Technology , Lucknow </td>
+        <td>2023 - 2027</td>
+        <td>9.04</td>
+      </tr>
+      <tr>
+        <td>12th</td>
+        <td>Janta Inter College Ratanupur , Jaunpur </td>
+        <td>2023</td>
+        <td>92.80%</td>
+      </tr>
+      <tr>
+        <td>10th</td>
+        <td>S.B.N.S.N School Belwa Bazar , Jaunpur</td>
+        <td>2021</td>
+        <td>82.83%</td>
+      </tr>
+    </table>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements">
+    <h2>Awards & Achievements</h2>
+    <div class="box">
+  <p>🏆 Won 1st Prize in Inter-College Hackathon 2023</p>
+  <p>💻 Completed 200+ problems on LeetCode</p>
+  <p>🧑‍💻 Secured seventh Rank in Jaunpur District BAsed on 12th Score</p>
+    </div>
+
+  </section>
+
+</div>
+
+<div class="box center-content">
+  <h2>Projects</h2>
+  <p><strong>Portfolio Website:</strong> This personal portfolio highlights my journey, projects, and skills using modern web technologies.</p>
+  <p><strong>Blog App:</strong> A CRUD blog platform built with Java, Spring Boot, MySQL, and Thymeleaf.</p>
+  <p><strong>Weather Dashboard:</strong> A frontend web app integrating OpenWeatherMap API to show real-time weather updates.</p>
+</div>
+
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-bar"><span>C++</span><div class="bar" style="width: 90%"></div></div>
+    <div class="skill-bar"><span>Java</span><div class="bar" style="width: 90%"></div></div>
+    <div class="skill-bar"><span>C</span><div class="bar" style="width: 70%"></div></div>
+    <div class="skill-bar"><span>HTML</span><div class="bar" style="width: 70%"></div></div>
+    <div class="skill-bar"><span>CSS</span><div class="bar" style="width: 70%"></div></div>
+    <div class="skill-bar"><span>JavaScript</span><div class="bar" style="width: 75%"></div></div>
+    <div class="skill-bar"><span>Python</span><div class="bar" style="width: 70%"></div></div>
+    <div class="skill-bar"><span>MySQL</span><div class="bar" style="width: 70%"></div></div>
+    <div class="skill-bar"><span>Spring Boot</span><div class="bar" style="width: 60%"></div></div>
+  </section>
+
+  <!-- Contact Modal Trigger -->
+   <div class="box center-content">
+    <section id="contact">
+    <h2>Get in Touch</h2>
+    <button onclick="document.getElementById('contactModal').style.display='flex'">Open Contact Form</button>
+  </section>
+   </div>
+  
+
+  <!-- Contact Modal -->
+  <div class="modal" id="contactModal">
+    <div class="modal-content">
+      <span class="close" onclick="document.getElementById('contactModal').style.display='none'">&times;</span>
+      <h3>Contact Me</h3>
+      <input type="text" placeholder="Sudheer Yadav">
+      <input type="email" placeholder="yadavsudheer@20052007@gamil.com">
+      <textarea rows="4" placeholder="write some message  here .."></textarea>
+      <button>Send Message</button>
+      <div>
+        <p>Location: India</p>
+        <p>Email: yadavsudheer20072005@gmail.com</p>
+        <p>WhatsApp: +91-(234)123456765</p>
+        <div>
+          <h4>Connect Me:</h4>
+          <a href="">LinkedIn</a> |
+          <a href="#">Instagram</a> |
+          <a href="#">Twitter(X)</a> |
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Follow Me Footer -->
+  <footer style="text-align:center; padding:2rem;">
+    <h3>Follow Me</h3>
+    <p>
+      <a href="https://linkedin.com/in/sudheer-coder/">LinkedIn</a> |
+      <a href="https://instagram.com/yaduvanshi_sudheer_7979/">Instagram</a> |
+      <a href="https://x.com/yad52180?t=0sx7G-hgbLm6U9sQCrKnGw&s=09">Twitter(X)</a> |
+      <a href="https://github.com/sudheerrrrit">GitHub</a>
+    </p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const currentTheme = document.body.getAttribute("data-theme");
+      document.body.setAttribute("data-theme", currentTheme === "light" ? "" : "light");
+    }
+  </script>
+</body>
+</html>
